@@ -140,68 +140,68 @@ You can create a new instructor account via the registration page, or change an 
 Instructors can create and manage their courses and lessons.
 ### Student Access
 Students can register for an account and enroll in available courses.
-Project Structure
+## Project Structure
 eduhub-lms/
-├── app/
-│   ├── bootstrap.php             # Core application setup
-│   ├── config/
-│   │   └── config.php            # Database and application configurations
-│   ├── controllers/              # Handles application logic and user input
-│   │   ├── Pages.php
-│   │   ├── AuthController.php
-│   │   └── InstructorController.php
-│   │   └── StudentController.php
-│   │   └── AdminController.php (if implemented)
-│   ├── helpers/
-│   │   └── SessionHelper.php     # Session management utilities
-│   │   └── UrlHelper.php         # URL redirection helper
-│   ├── libraries/                # Core framework components
-│   │   ├── Core.php              # Handles URL parsing and controller loading
-│   │   ├── Controller.php        # Base controller class
-│   │   ├── Database.php          # Database abstraction layer
-│   │   └── (Other custom libraries)
-│   ├── models/                   # Interacts with the database
-│   │   ├── User.php
-│   │   ├── Course.php
-│   │   ├── Category.php
-│   │   ├── Lesson.php
-│   │   └── Enrollment.php
-│   │   └── (Other models)
-│   └── views/                    # Presentation layer (HTML, PHP templates)
-│       ├── layouts/              # Common headers/footers
-│       │   ├── header.php
-│       │   └── footer.php
-│       ├── pages/                # Public facing pages
-│       │   ├── index.php
-│       │   └── about.php
-│       ├── auth/                 # Authentication views
-│       │   ├── register.php
-│       │   └── login.php
-│       ├── instructor/           # Instructor-specific views
-│       │   ├── dashboard.php
-│       │   ├── mycourses.php
-│       │   ├── add_course.php
-│       │   ├── edit_course.php
-│       │   ├── manage_lessons.php
-│       │   ├── add_lesson.php
-│       │   └── edit_lesson.php
-│       └── student/              # Student-specific views
-│           ├── dashboard.php
-│           ├── enrolled_courses.php
-│           ├── course_details.php
-│           └── lesson_view.php
-├── public/                       # Web server root directory
-│   ├── .htaccess                 # URL rewriting rules
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── main.js
-│   ├── storage/                  # User uploaded files (e.g., course images)
-│   │   └── uploads/
-│   │       └── courses/
-│   └── index.php                 # Front controller
-├── database.sql                  # Database schema and initial data
-└── README.md                     # This file
+- ├── app/
+- │   ├── bootstrap.php             # Core application setup
+- │   ├── config/
+- │   │   └── config.php            # Database and application configurations
+- │   ├── controllers/              # Handles application logic and user input
+- │   │   ├── Pages.php
+- │   │   ├── AuthController.php
+- │   │   └── InstructorController.php
+- │   │   └── StudentController.php
+- │   │   └── AdminController.php (if implemented)
+- │   ├── helpers/
+- │   │   └── SessionHelper.php     # Session management utilities
+- │   │   └── UrlHelper.php         # URL redirection helper
+- │   ├── libraries/                # Core framework components
+- │   │   ├── Core.php              # Handles URL parsing and controller loading
+- │   │   ├── Controller.php        # Base controller class
+- │   │   ├── Database.php          # Database abstraction layer
+- │   │   └── (Other custom libraries)
+- │   ├── models/                   # Interacts with the database
+- │   │   ├── User.php
+- │   │   ├── Course.php
+- │   │   ├── Category.php
+- │   │   ├── Lesson.php
+- │   │   └── Enrollment.php
+- │   │   └── (Other models)
+- │   └── views/                    # Presentation layer (HTML, PHP templates)
+- │       ├── layouts/              # Common headers/footers
+- │       │   ├── header.php
+- │       │   └── footer.php
+- │       ├── pages/                # Public facing pages
+- │       │   ├── index.php
+- │       │   └── about.php
+- │       ├── auth/                 # Authentication views
+- │       │   ├── register.php
+- │       │   └── login.php
+- │       ├── instructor/           # Instructor-specific views
+- │       │   ├── dashboard.php
+- │       │   ├── mycourses.php
+- │       │   ├── add_course.php
+- │       │   ├── edit_course.php
+- │       │   ├── manage_lessons.php
+- │       │   ├── add_lesson.php
+- │       │   └── edit_lesson.php
+- │       └── student/              # Student-specific views
+- │           ├── dashboard.php
+- │           ├── enrolled_courses.php
+- │           ├── course_details.php
+- │           └── lesson_view.php
+- ├── public/                       # Web server root directory
+- │   ├── .htaccess                 # URL rewriting rules
+- │   ├── css/
+- │   │   └── style.css
+- │   ├── js/
+- │   │   └── main.js
+- │   ├── storage/                  # User uploaded files (e.g., course images)
+- │   │   └── uploads/
+- │   │       └── courses/
+- │   └── index.php                 # Front controller
+- ├── database.sql                  # Database schema and initial data
+- └── README.md                     # This file
 
 
 ### Contributing
